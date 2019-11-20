@@ -12,15 +12,37 @@ import java.util.UUID;
  * @author aalbaek-nt
  */
 public class Actuator {
-    private UUID actuatorID;
+    private UUID actuatorName;
     private int actuatorValue;
     private String actuatorType;
 
-    public Actuator(UUID actuatorID, int actuatorValue, String actuatorType) {
-        this.actuatorID = actuatorID;
+    public Actuator(UUID actuatorName, int actuatorValue, String actuatorType) {
+        this.actuatorName = actuatorName;
         this.actuatorValue = actuatorValue;
         this.actuatorType = actuatorType;
     }
+
+    public UUID getActuatorID() {
+        return actuatorID;
+    }
+
+    public int getActuatorValue() {
+        return actuatorValue;
+    }
+
+    public void setActuatorValue(int actuatorValue) {
+        this.actuatorValue = actuatorValue;
+    }
+
+    public String getActuatorType() {
+        return actuatorType;
+    }
+
+    public void setActuatorType(String actuatorType) {
+        this.actuatorType = actuatorType;
+    }
+    
+    
     
     
 }
