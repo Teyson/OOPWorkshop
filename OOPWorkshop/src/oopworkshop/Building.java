@@ -25,11 +25,11 @@ public class Building {
         return name;
     }
     
-    public void addSensor(Sensor sensor) {
-        sensor.put(sensor.getSensorName, this.Building(this.name));
+    public void addSensor(Sensor sensorAdd) {
+        sensor.put(sensorAdd.getSensorName(), sensorAdd);
     }
     
-    public void addActuator (Actuator actuator) {
-        sensor.put(actuator.getActuatorName, this.Building(this.name));
+    public void addActuator (Actuator actuatorAdd) {
+        actuator.put(actuatorAdd.getActuatorID(), actuatorAdd);
     }
 }
