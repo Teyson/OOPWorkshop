@@ -17,7 +17,7 @@ public class Building {
     HashMap<UUID, Sensor> sensor = new HashMap<UUID, Sensor>();
     HashMap<UUID, Actuator> actuator = new HashMap<UUID, Actuator>();
     
-    public void Building (UUID id) {
+    public Building (UUID id) {
         this.name = id;
     } 
 
@@ -32,4 +32,14 @@ public class Building {
     public void addActuator (Actuator actuatorAdd) {
         actuator.put(actuatorAdd.getActuatorName(), actuatorAdd);
     }
+
+    public HashMap<UUID, Sensor> getSensor() {
+        return sensor;
+    }
+
+    public HashMap<UUID, Actuator> getActuator() {
+        return actuator;
+    }
+    
+    
 }

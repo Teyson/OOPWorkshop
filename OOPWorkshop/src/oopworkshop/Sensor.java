@@ -25,6 +25,4 @@ public class Sensor {
     public void setSensorName(UUID SensorName) {
         this.SensorName = SensorName;
     }
-    
-    
 }
