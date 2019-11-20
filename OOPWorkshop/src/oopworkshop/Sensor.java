@@ -33,5 +33,5 @@ public class Sensor {
         this.SensorName = SensorName;
     }
     */
-    
+
 }

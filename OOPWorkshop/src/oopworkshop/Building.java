@@ -19,7 +19,7 @@ public class Building {
     HashMap<UUID, Actuator> actuator = new HashMap<UUID, Actuator>();
     String information;
     
-    public void Building (UUID id, String name) {
+    public Building (UUID id, String name) {
         this.id = id;
         this.name = name;
         
