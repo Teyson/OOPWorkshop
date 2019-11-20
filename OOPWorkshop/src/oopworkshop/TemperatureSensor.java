@@ -5,10 +5,19 @@
  */
 package oopworkshop;
 
+import java.util.UUID;
+
 /**
  *
  * @author aalbaek-nt
  */
-public class TemperatureSensor {
+public class TemperatureSensor extends Sensor{
+    private double value;
+
+    public TemperatureSensor(UUID sensorName) {
+        super(sensorName);
+        this.value = Math.random()*10+15;
+    }
+    
     
 }

@@ -5,10 +5,20 @@
  */
 package oopworkshop;
 
+import java.util.UUID;
 /**
  *
  * @author aalbaek-nt
  */
-public class CO2Sensor {
-    
+public class CO2Sensor extends Sensor{
+    private double value;
+
+    public CO2Sensor(UUID sensorName) {
+        super(sensorName);
+        this.value = Math.random()*100;
+    }
+
+    public double getValue() {
+        return value;
+    }
 }

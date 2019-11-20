@@ -5,10 +5,26 @@
  */
 package oopworkshop;
 
+import java.util.UUID;
+
 /**
  *
  * @author aalbaek-nt
  */
 public class Sensor {
+    private UUID SensorName;
+
+    public Sensor(UUID sensorName) {
+        this.SensorName = sensorName;
+    }
+
+    public UUID getSensorName() {
+        return SensorName;
+    }
+
+    public void setSensorName(UUID SensorName) {
+        this.SensorName = SensorName;
+    }
+    
     
 }
