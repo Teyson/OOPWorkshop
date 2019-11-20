@@ -12,19 +12,26 @@ import java.util.UUID;
  * @author aalbaek-nt
  */
 public class Sensor {
-    private UUID SensorName;
+    private UUID SensorId;
+    private String SensorName;
+    
 
-    public Sensor(UUID sensorName) {
+    public Sensor(UUID sensorId, String sensorName) {
         this.SensorName = sensorName;
+        this.SensorId = sensorId;
     }
 
-    public UUID getSensorName() {
+    public UUID getSensorId() {
+        return SensorId;
+    }
+    
+    public String getSensorName() {
         return SensorName;
     }
 
-    public void setSensorName(UUID SensorName) {
+    /*public void setSensorName(UUID SensorName) {
         this.SensorName = SensorName;
     }
-    
+    */
     
 }

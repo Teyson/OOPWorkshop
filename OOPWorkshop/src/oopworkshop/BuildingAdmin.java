@@ -17,10 +17,10 @@ public class BuildingAdmin {
    }
   
 public void addBuilding(Building building) {
-    buildings.put(building.getName(), building);
+    buildings.put(building.getId(), building);
 }
 public void removeBuilding (Building building) {
-    buildings.remove(building.getName());
+    buildings.remove(building.getId());
 }
 
 public void setBuidlings(HashMap<UUID, Building> buildings){

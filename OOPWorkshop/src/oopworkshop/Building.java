@@ -13,20 +13,28 @@ import java.util.UUID;
  * @author aalbaek-nt
  */
 public class Building {
-    UUID name;
+    UUID id;
+    String name;
     HashMap<UUID, Sensor> sensor = new HashMap<UUID, Sensor>();
     HashMap<UUID, Actuator> actuator = new HashMap<UUID, Actuator>();
+    String information;
     
-    public void Building (UUID id) {
-        this.name = id;
+    public void Building (UUID id, String name) {
+        this.id = id;
+        this.name = name;
+        
     } 
 
-    public UUID getName() {
+    public String getName() {
         return name;
     }
     
+    public UUID getId() {
+        return id;
+    } 
+    
     public void addSensor(Sensor sensorAdd) {
-        sensor.put(sensorAdd.getSensorName(), sensorAdd);
+        sensor.put(sensorAdd.getSensorId(), sensorAdd);
     }
     
     public void addActuator (Actuator actuatorAdd) {

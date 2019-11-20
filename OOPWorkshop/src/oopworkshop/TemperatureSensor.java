@@ -14,8 +14,8 @@ import java.util.UUID;
 public class TemperatureSensor extends Sensor{
     private double value;
 
-    public TemperatureSensor(UUID sensorName) {
-        super(sensorName);
+    public TemperatureSensor(UUID sensorId, String sensorName) {
+        super(sensorId, sensorName);
         this.value = Math.random()*10+15;
     }
     

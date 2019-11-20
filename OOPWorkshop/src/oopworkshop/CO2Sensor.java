@@ -13,8 +13,8 @@ import java.util.UUID;
 public class CO2Sensor extends Sensor{
     private double value;
 
-    public CO2Sensor(UUID sensorName) {
-        super(sensorName);
+    public CO2Sensor(UUID sensorId, String sensorName) {
+        super(sensorId, sensorName);
         this.value = Math.random()*100;
     }
 
