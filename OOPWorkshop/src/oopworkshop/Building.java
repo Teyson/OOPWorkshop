@@ -30,6 +30,6 @@ public class Building {
     }
     
     public void addActuator (Actuator actuatorAdd) {
-        actuator.put(actuatorAdd.getActuatorID(), actuatorAdd);
+        actuator.put(actuatorAdd.getActuatorName(), actuatorAdd);
     }
 }
