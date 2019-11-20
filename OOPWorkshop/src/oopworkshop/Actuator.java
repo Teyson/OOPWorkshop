@@ -5,10 +5,22 @@
  */
 package oopworkshop;
 
+import java.util.UUID;
+
 /**
  *
  * @author aalbaek-nt
  */
 public class Actuator {
+    private UUID actuatorID;
+    private int actuatorValue;
+    private String actuatorType;
+
+    public Actuator(UUID actuatorID, int actuatorValue, String actuatorType) {
+        this.actuatorID = actuatorID;
+        this.actuatorValue = actuatorValue;
+        this.actuatorType = actuatorType;
+    }
+    
     
 }
