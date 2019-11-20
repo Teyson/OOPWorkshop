@@ -23,7 +23,7 @@ public class Actuator {
     }
 
     public UUID getActuatorID() {
-        return actuatorID;
+        return actuatorName;
     }
 
     public int getActuatorValue() {
