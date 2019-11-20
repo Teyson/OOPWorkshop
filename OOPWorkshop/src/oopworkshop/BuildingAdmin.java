@@ -5,10 +5,32 @@
  */
 package oopworkshop;
 
-/**
- *
- * @author aalbaek-nt
- */
+import java.util.HashMap;
+import java.util.UUID;
+
+
 public class BuildingAdmin {
+      
+    private HashMap<UUID, Building> buildings = new HashMap<>();
     
+   public BuildingAdmin() {
+   }
+  
+public void addBuilding(Building building) {
+    buildings.put(building.getName(), building);
 }
+public void removeBuilding (Building building) {
+    buildings.remove(building.getName());
+}
+
+public void setBuidlings(HashMap<UUID, Building> buildings){
+    this.buildings = buildings;
+}
+
+public HashMap<UUID, Building> getBuildings() {
+    return buildings;
+}
+}
+
+
+
