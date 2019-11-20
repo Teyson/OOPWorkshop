@@ -22,8 +22,8 @@ public class Actuator {
         this.actuatorType = actuatorType;
     }
 
-    public UUID getActuatorID() {
-        return actuatorID;
+    public UUID getActuatorName() {
+        return actuatorName;
     }
 
     public int getActuatorValue() {
